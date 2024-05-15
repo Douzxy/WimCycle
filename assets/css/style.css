@@ -1,97 +1,129 @@
-
 .scrolled {
-            background-color: #FFF;
-            box-shadow: 0 1px 15px #00000029;
-        }
+  background-color: #fff;
+  box-shadow: 0 1px 15px #00000029;
+}
 
-        .header {
-            padding: 14px 0;
-            position: fixed;
-            width: 100%;
-            z-index: 1010;
-            border-radius: 0 0 90px 90px;
-            transition: all ease .3s;
-        }
+.scrolled #search-button {
+    background-color: #002856 !important;
 
-        .dcolor {
-            color: #002856;
-        }
+}
+.scrolled #search-button #svgsearch {
+    color: white !important; 
+}
 
-        .search svg {
-            fill: #002856;
-        }
+.scrolled #search-button:hover {
+    background-color: #ffb71b !important;
 
-        /* 
+
+}
+.scrolled #search-button #svgsearch:hover {
+    color: white !important; 
+}
+
+.header {
+  padding: 14px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1010;
+  border-radius: 0 0 90px 90px;
+  transition: all ease 0.3s;
+}
+
+.dcolor {
+  color: #002856;
+}
+
+.search svg {
+  fill: #002856;
+}
+
+/* 
         #search {
             border: 2px solid #002856;
         } */
 
-        #search:hover svg {
-            fill: #FFF;
-        }
+#search:hover svg {
+  fill: #fff;
+}
 
-        html,
-        body {
-            font-family: 'titillium-web', sans-serif;
-            color: #212529;
-        }
+html,
+body {
+  font-family: "titillium-web", sans-serif;
+  color: #212529;
+}
 
-        .section-line {
-            border-top: 1px solid #FFB71B;
-            position: relative;
-        }
+.section-line {
+  border-top: 1px solid #ffb71b;
+  position: relative;
+}
 
-        .section-line:after {
-            content: '';
-            width: 132px;
-            height: 3px;
-            background-color: #FFB71B;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            bottom: 0;
-        }
+.section-line:after {
+  content: "";
+  width: 132px;
+  height: 3px;
+  background-color: #ffb71b;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
 
-        .productcat-box {
-            border: 1px solid #E8E7E7;
-            height: 100%;
-            padding-bottom: 96px;
-            position: relative;
-            display: block;
-            transition: all 0.3s;
-        }
+.productcat-box {
+  border: 1px solid #e8e7e7;
+  height: 100%;
+  padding-bottom: 96px;
+  position: relative;
+  display: block;
+  transition: all 0.3s;
+}
 
-        .pro .ra .r {
-            color: #002856;
-            transition: all;
-            transition-duration: 300ms;
-        }
+.pro .ra .r {
+  color: #002856;
+  transition: all;
+  transition-duration: 300ms;
+}
 
-        .pro:hover .ra .r {
-            color: #FFB71B;
-        }
+.pro:hover .ra .r {
+  color: #ffb71b;
+}
 
-        .rac .rc {
-            color: #002856;
-            transition: all;
-            transition-duration: 300ms;
-        }
+.rac .rc {
+  color: #002856;
+  transition: all;
+  transition-duration: 300ms;
+}
 
-        .rac:hover .rc {
-            color: #FFB71B;
-        }
+.rac:hover .rc {
+  color: #ffb71b;
+}
 
-        .footer {
-            padding-top: 63px;
-            color: #FFB71B;
-            box-shadow: 0 -7px 20px #00000070;
-            position: relative;
-            z-index: 401;
-            overflow: hidden;
-        }
+.footer {
+  padding-top: 63px;
+  color: #ffb71b;
+  box-shadow: 0 -7px 20px #00000070;
+  position: relative;
+  z-index: 401;
+  overflow: hidden;
+}
 
-        #search-input:focus {
-            border: 0 !important;
-            border: none !important;
-            border: 0 solid #002856 !important;
-        }
+#search-input:focus {
+  border: 0 !important;
+  border: none !important;
+  border: 0 solid #002856 !important;
+}
+
+/* Kondisi saat aria-current="false" */
+button.s-indicators[aria-current="false"] {
+    /* Atur gaya sesuai kebutuhan */
+    /* Contoh: */
+    background-color: transparent;
+    border-color: #ffb71b;
+}
+
+/* Kondisi saat aria-current="true" */
+button.s-indicators[aria-current="true"] {
+    /* Atur gaya sesuai kebutuhan */
+    /* Contoh: */
+    background-color: #ffb71b;
+    border-color: transparent;
+}

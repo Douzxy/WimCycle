@@ -99,6 +99,8 @@ searchButton.addEventListener("mouseleave", function () {
   }
 });
 
+
+
 // Animation Gsap
 const text = 'MX Big Foot Road 20'; // Teks yang akan dijadikan animasi mengetik
 const typingText = document.getElementById('typingText');
