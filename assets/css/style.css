@@ -1,3 +1,7 @@
+.titillium-web {
+  font-family: 'titillium-web' sans-serif;
+}
+
 .scrolled {
   background-color: #fff;
   box-shadow: 0 1px 15px #00000029;
@@ -127,3 +131,253 @@ button.s-indicators[aria-current="true"] {
     background-color: #ffb71b;
     border-color: transparent;
 }
+
+
+#default-radio-2 {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#product_order {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+#product_order:focus {
+  border: 1px solid black !important;
+}
+
+input.ukuran[type="checkbox"]:checked {
+  background-color: #ffb71b;
+  border-color: #ffb71b;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+input.ukuran[type="checkbox"]:checked + .checkbox-icon {
+  background-color: #ffb71b;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+input.ukuran[type="checkbox"]:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+input.warna[value="black"]:checked {
+  background-color: black;
+  border-color: black;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 4px !important;
+}
+
+input.warna[value="blue"]:checked {
+  background-color: #0066bf;
+  border-color: #0066bf;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 4px !important;
+}
+input.warna[value="bronze"]:checked {
+  background-color: #c9951c;
+  border-color: #c9951c;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 4px !important;
+}
+input.warna[value="cream"]:checked {
+  background-color: #ddbc7a;
+  border-color: #ddbc7a;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 4px !important;
+}
+input.warna[value="dolphin-gray"]:checked {
+  background-color: #989c9f;
+  border-color: #989c9f;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 4px !important;
+}
+input.warna[value="gray"]:checked {
+  background-color: #999999;
+  border-color: #999999;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 4px !important;
+}
+input.warna[value="blue"]:checked {
+  background-color: #0066bf;
+  border-color: #0066bf;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 4px !important;
+}
+input.warna[value="green"]:checked {
+  background-color: #31af00;
+  border-color: #31af00;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 4px !important;
+}
+input.warna[value="khaki"]:checked {
+  background-color: #c3b091;
+  border-color: #c3b091;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 4px !important;
+}
+input.warna[value="orange"]:checked {
+  background-color: #dd6e00;
+  border-color: #dd6e00;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 4px !important;
+}
+input.warna[value="pink"]:checked {
+  background-color: #fc76d6;
+  border-color: #fc76d6;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 4px !important;
+}
+input.warna[value="purple"]:checked {
+  background-color: #8224e3;
+  border-color: #8224e3;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 4px !important;
+}
+input.warna[value="red"]:checked {
+  background-color: #c60000;
+  border-color: #c60000;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 4px !important;
+}
+input.warna[value="rose-pink"]:checked {
+  background-color: #f9c3be;
+  border-color: #f9c3be;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 4px !important;
+}
+input.warna[value="silver"]:checked {
+  background-color: #a0a0a0;
+  border-color: #a0a0a0;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 4px !important;
+}
+input.warna[value="sky-blue"]:checked {
+  background-color: #93bbdb;
+  border-color: #93bbdb;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 4px !important;
+}
+input.warna[value="white"]:checked {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 4px !important;
+}
+
+input.warna[value="yellow"]:checked {
+  background-color: #f9d800;
+  border-color: #f9d800;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 4px !important;
+}
+
+input.warna[type="checkbox"]:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Range Slide */
+
+
+.wrapper .price-input {
+  width: 100%;
+  margin: 30px 0 35px;
+}
+
+.wrapper .price-input .field {
+  width: 100%;
+  height: 45px;
+  align-items: center;
+}
+
+.price-input input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.price-input input::-webkit-outer-spin-button,
+.price-input input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.wrapper .seperator {
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+}
+
+.wrapper .slider {
+  height: 4px;
+  position: relative;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.wrapper .progress {
+  position: absolute;
+  height: 100%;
+  left: 0%;
+  right: 0%;
+  background-color: #ffb71b;
+  border-radius: 5px;
+}
+
+.wrapper .range-input {
+  position: relative;
+}
+
+.wrapper .range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  pointer-events: none;
+  background: none;
+  appearance: none;
+  accent-color: #4070f4;
+}
+
+.wrapper .range-input input::-webkit-slider-thumb {
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  pointer-events: auto;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  border: 6px solid #ffb71b;
+}
+
+
+.close {
+  display: none !important;
+}
+

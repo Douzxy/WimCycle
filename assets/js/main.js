@@ -99,36 +99,36 @@ searchButton.addEventListener("mouseleave", function () {
   }
 });
 
-
-
 // Animation Gsap
-const text = 'MX Big Foot Road 20'; // Teks yang akan dijadikan animasi mengetik
-const typingText = document.getElementById('typingText');
+const text = "MX Big Foot Road 20"; // Teks yang akan dijadikan animasi mengetik
+const typingText = document.getElementById("typingText");
 const typingDelay = 150; // Delay untuk efek mengetik (dalam milidetik)
 
 function typeText(index) {
-    if (index === text.length) {
-        setTimeout(deleteText, 1000); // Setelah mengetik selesai, mulai menghapus
-        return;
-    }
-    typingText.textContent += text[index];
-    setTimeout(() => typeText(index + 1), typingDelay); // Tambahkan delay untuk efek mengetik
+  if (index === text.length) {
+    setTimeout(deleteText, 1000); // Setelah mengetik selesai, mulai menghapus
+    return;
+  }
+  typingText.textContent += text[index];
+  setTimeout(() => typeText(index + 1), typingDelay); // Tambahkan delay untuk efek mengetik
 }
 
 function deleteText() {
-    if (typingText.textContent.length === 0) {
-        setTimeout(startOver, 150); // Setelah penghapusan selesai, mulai dari awal dengan delay 0.5 detik
-        
-        return;
-    }
-    typingText.textContent = typingText.textContent.slice(0, -1);
-    setTimeout(deleteText, 100); // Tambahkan delay untuk efek penghapusan
+  if (typingText.textContent.length === 0) {
+    setTimeout(startOver, 150); // Setelah penghapusan selesai, mulai dari awal dengan delay 0.5 detik
+
+    return;
+  }
+  typingText.textContent = typingText.textContent.slice(0, -1);
+  setTimeout(deleteText, 100); // Tambahkan delay untuk efek penghapusan
 }
 
 function startOver() {
-    typingText.textContent = ""; // Setel teks ke kosong
-    
-    setTimeout(() => typeText(0), 150); // Mulai mengetik kembali setelah delay 0.5 detik
+  typingText.textContent = ""; // Setel teks ke kosong
+
+  setTimeout(() => typeText(0), 150); // Mulai mengetik kembali setelah delay 0.5 detik
 }
 
 typeText(0); // Memulai animasi mengetik
+
+
