@@ -100,7 +100,7 @@ searchButton.addEventListener("mouseleave", function () {
 });
 
 // Animation Gsap
-const text = "MX Big Foot Road 20"; // Teks yang akan dijadikan animasi mengetik
+const text = 'MX Big Foot Road 20"'; // Teks yang akan dijadikan animasi mengetik
 const typingText = document.getElementById("typingText");
 const typingDelay = 150; // Delay untuk efek mengetik (dalam milidetik)
 

@@ -32,7 +32,7 @@
 <body class="tracking-tight overflow-x-hidden">
 
     <div class="page-wrapper relative ">
-        <header class="header  body-font py-[14px]  px-[61px] mb-2 h-[88px] ">
+        <header class="header  body-font py-[14px]  px-[61px] mb-2 h-[88px] scrolled">
             <nav class="navbar container px-[15px] flex items-center justify-between ">
                 <a href="index.html" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                     <img src="assets/image/logo.webp" alt="" width="193" height="52">
@@ -118,16 +118,7 @@
             </nav>
         </header>
 
-        <div class="page-content">
-            <div class="heading-page fade-in relative">
-                <img src="assets/image/HEADER-PRODUK.jpg" class="top-0 block w-full h-[320px] translate-x-12" alt="...">
-
-                <div class="container absolute top-[140px] body-font mx-[61px] section pl-[65px] pr-[15px]">
-                    <h1 class="text-[38px] font-extrabold font-['Montserrat'] text-[#002856] mb-[5px]">Produk</h1>
-                    <p class="text-[18px] font-semibold font-sans text-[#212529]">Wimcycle menawarkan sepeda <br>
-                        berkualitas dengan desain yang stylish</p>
-                </div>
-            </div>
+        <div class="page-content pt-20">
 
             <div class="container body-font px-[61px] mx-[15px] section">
                 <div class="page-inside">
@@ -146,475 +137,286 @@
                                         stroke-width="2" d="m1 9 4-4-4-4" />
                                 </svg>
                                 <a href="#"
-                                    class="ms-1 text-xs font-semibold text-[#ffb71b] md:ms-2 font-[Montserrat] ">PRODUK</a>
+                                    class="ms-1 text-xs font-semibold text-[#002856] hover:text-[#ffb71b] md:ms-2 font-[Montserrat] ">PRODUK</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                                <svg class="rtl:rotate-180 w-2 h-2 text-[#002856] mx-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 9 4-4-4-4" />
+                                </svg>
+                                <a href="#"
+                                    class="ms-1 text-xs font-semibold text-[#002856] hover:text-[#ffb71b] md:ms-2 font-[Montserrat] ">SEPEDA
+                                    ANAK</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                                <svg class="rtl:rotate-180 w-2 h-2 text-[#002856] mx-1" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 9 4-4-4-4" />
+                                </svg>
+                                <a href="#"
+                                    class="ms-1 text-xs font-semibold text-[#ffb71b] md:ms-2 font-[Montserrat] ">BMX
+                                    BRONCO BURN 20"</a>
                             </div>
                         </li>
                     </ul>
 
-                    <div class="grid row-auto grid-cols-12">
-
-                        <div class="col-span-3 mr-[15px] font-[Montserrat]">
-                            <div class="product-filter" style="margin-bottom: 100px">
-                                <form action="https://www.wimcycle.com/produk/">
 
 
-                                    <div class="font-extrabold text-xl mb-3">
-                                        <h4>FILTER</h4>
+                    <div class="container grid mb-[25px] pt-[30px] grid-cols-12">
+                        <div class="mb-10 md:mb-0 col-span-7">
+
+                            <div id="animation-carousel" class="relative w-[635px]" data-carousel="static">
+                                <!-- Carousel wrapper -->
+                                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                                    <!-- Item 1 -->
+                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                        <img src="https://www.wimcycle.com/wp-content/uploads/2024/02/MY24-BRONCO20-BURN-GREEN-FOREST-P-800x600.jpg?x30018"
+                                            class="absolute block w-[500px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                            alt="...">
                                     </div>
-                                    <div class="product-filter__close">
-                                        <i class="ion-android-close"></i>
+                                    <!-- Item 2 -->
+                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                        <img src="https://www.wimcycle.com/wp-content/uploads/2024/02/MY24-BRONCO20-BURN-GREEN-FOREST-P-800x600.jpg?x30018"
+                                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                            alt="...">
                                     </div>
-
-                                    &nbsp;
-
-
-                                    <div class="mb-[30px]">
-                                        <div id="tipe"
-                                            class="pb-[15px] mb-5 flex justify-between items-center font-bold border-b cursor-pointer">
-                                            <span class=" text-[15px]">TIPE</span>
-                                            <i id="fa-type"
-                                                class="fa-solid fa-sort-up text-lg text-[#d4d4d4]"></i>
-                                        </div>
-
-                                        <div class="filter-group__content text-sm font-semibold close" id="type">
-
-                                            <div class="checkbox mb-[18px]">
-                                                <label for="" class="mb-2 cursor-pointer">
-                                                    <input id="default-radio-2" type="radio" value=""
-                                                        name="default-radio"
-                                                        class="mr-[10px] w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 dark:ring-offset-gray-800  dark:border-gray-600 ">
-                                                    <span class=""></span>
-                                                    Aegyo Series </label>
-                                            </div>
-                                            <div class="checkbox mb-[18px]">
-                                                <label for="" class="mb-2 cursor-pointer">
-                                                    <input id="default-radio-2" type="radio" value=""
-                                                        name="default-radio"
-                                                        class="mr-[10px] w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 dark:ring-offset-gray-800  dark:border-gray-600">
-                                                    <span class=""></span>
-                                                    CTB </label>
-                                            </div>
-                                            <div class="checkbox mb-[18px]">
-                                                <label for="" class="mb-2 cursor-pointer">
-                                                    <input id="default-radio-2" type="radio" value=""
-                                                        name="default-radio"
-                                                        class="mr-[10px] w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 dark:ring-offset-gray-800  dark:border-gray-600">
-                                                    <span class=""></span>
-                                                    Sepeda Anak </label>
-                                            </div>
-                                            <div class="checkbox mb-[18px]">
-                                                <label for="" class="mb-2 cursor-pointer">
-                                                    <input id="default-radio-2" type="radio" value=""
-                                                        name="default-radio"
-                                                        class="mr-[10px] w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 dark:ring-offset-gray-800  dark:border-gray-600">
-                                                    <span class=""></span>
-                                                    Sepeda BMX </label>
-                                            </div>
-                                            <div class="checkbox mb-[18px]">
-                                                <label for="" class="mb-2 cursor-pointer">
-                                                    <input id="default-radio-2" type="radio" value=""
-                                                        name="default-radio"
-                                                        class="mr-[10px] w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 dark:ring-offset-gray-800  dark:border-gray-600 focus:outline-none">
-                                                    <span class=""></span>
-                                                    Sepeda Gunung (MTB) </label>
-                                            </div>
-                                            <div class="checkbox mb-[18px]">
-                                                <label for="" class="mb-2 cursor-pointer">
-                                                    <input id="default-radio-2" type="radio" value=""
-                                                        name="default-radio"
-                                                        class="mr-[10px] w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 dark:ring-offset-gray-800  dark:border-gray-600">
-                                                    <span class=""></span>
-                                                    Sepeda Lipat </label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="mb-[30px]" >
-                                        <div id="ukuran"
-                                            class="pb-[15px] mb-5 flex justify-between items-center font-bold border-b cursor-pointer">
-                                            <span class=" text-[15px]">UKURAN</span>
-                                            <i id="fa-size" class="fa-solid fa-sort-up text-lg text-[#d4d4d4]"></i>
-                                        </div>
-
-                                        <div class="filter-group__content font-semibold close" id="size">
-
-                                            <div class="flex items-center mb-[18px] text-sm">
-                                                <input id="size-12" name="size" value="12" type="checkbox"
-                                                    class="ukuran w-[18px] h-[18px] rounded-[3px] cursor-pointer">
-                                                <label for="size-12" class="ml-2 cursor-pointer flex items-center">
-                                                    <span class="checkbox-icon mr-[5px]"></span>
-                                                    12"
-                                                </label>
-                                            </div>
-                                            <div class="flex items-center mb-[18px] text-sm">
-                                                <input id="size-16" name="size" value="16" type="checkbox"
-                                                    class="ukuran w-[18px] h-[18px] rounded-[3px] cursor-pointer">
-                                                <label for="size-16" class="ml-2 cursor-pointer flex items-center">
-                                                    <span class="checkbox-icon mr-[5px]"></span>
-                                                    16"
-                                                </label>
-                                            </div>
-                                            <div class="flex items-center mb-[18px] text-sm">
-                                                <input id="size-18" name="size" value="18" type="checkbox"
-                                                    class="ukuran w-[18px] h-[18px] rounded-[3px] cursor-pointer">
-                                                <label for="size-18" class="ml-2 cursor-pointer flex items-center">
-                                                    <span class="checkbox-icon mr-[5px]"></span>
-                                                    18"
-                                                </label>
-                                            </div>
-                                            <div class="flex items-center mb-[18px] text-sm">
-                                                <input id="size-20" name="size" value="20" type="checkbox"
-                                                    class="ukuran w-[18px] h-[18px] rounded-[3px] cursor-pointer">
-                                                <label for="size-20" class="ml-2 cursor-pointer flex items-center">
-                                                    <span class="checkbox-icon mr-[5px]"></span>
-                                                    20"
-                                                </label>
-                                            </div>
-                                            <div class="flex items-center mb-[18px] text-sm">
-                                                <input id="size-24" name="size" value="24" type="checkbox"
-                                                    class="ukuran w-[18px] h-[18px] rounded-[3px] cursor-pointer">
-                                                <label for="size-24" class="ml-2 cursor-pointer flex items-center">
-                                                    <span class="checkbox-icon mr-[5px]"></span>
-                                                    24"
-                                                </label>
-                                            </div>
-                                            <div class="flex items-center mb-[18px] text-sm">
-                                                <input id="size-27.5" name="size" value="27.5" type="checkbox"
-                                                    class="ukuran w-[18px] h-[18px] rounded-[3px] cursor-pointer">
-                                                <label for="size-27.5" class="ml-2 cursor-pointer flex items-center">
-                                                    <span class="checkbox-icon mr-[5px]"></span>
-                                                    27.5"
-                                                </label>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="mb-[30px]" >
-                                        <div id="warna"
-                                            class="pb-[15px] mb-5 flex justify-between items-center font-bold border-b cursor-pointer">
-                                            <span class=" text-[15px]">WARNA</span>
-                                            <i id="fa-color" class="fa-solid fa-sort-up text-lg text-[#d4d4d4]"></i>
-                                        </div>
-
-                                        <div class="grid grid-cols-5 gap-3 close" id="color">
-                                            <div
-                                                class="checkbox-color relative hover:shadow-lg checked:shadow-lg w-fit cursor-pointer">
-                                                <label for="">
-                                                    <input name="color" value="black" type="checkbox"
-                                                        class="warna absolute bg-transparent w-9 h-9 z-10 border-none cursor-pointer">
-                                                    <div
-                                                        class="checkbox-icon bg-[#000000] rounded w-9 h-9 shadow cursor-pointer">
-                                                    </div>
-                                                </label>
-                                            </div>
-
-                                            <div
-                                                class="checkbox-color relative hover:shadow-lg checked:shadow-lg w-fit cursor-pointer">
-                                                <label for="">
-                                                    <input name="color" value="blue" type="checkbox"
-                                                        class="warna absolute bg-transparent w-9 h-9 z-10 border-none cursor-pointer">
-                                                    <div
-                                                        class="checkbox-icon bg-[#0066bf] rounded w-9 h-9 shadow cursor-pointer">
-                                                    </div>
-                                                </label>
-                                            </div>
-
-                                            <div
-                                                class="checkbox-color relative hover:shadow-lg checked:shadow-lg w-fit cursor-pointer">
-                                                <label for="">
-                                                    <input name="color" value="bronze" type="checkbox"
-                                                        class="warna absolute bg-transparent w-9 h-9 z-10 border-none cursor-pointer">
-                                                    <div
-                                                        class="checkbox-icon bg-[#c9951c] rounded w-9 h-9 shadow cursor-pointer">
-                                                    </div>
-                                                </label>
-                                            </div>
-
-                                            <div
-                                                class="checkbox-color relative hover:shadow-lg checked:shadow-lg w-fit cursor-pointer">
-                                                <label for="">
-                                                    <input name="color" value="cream" type="checkbox"
-                                                        class="warna absolute bg-transparent w-9 h-9 z-10 border-none cursor-pointer">
-                                                    <div
-                                                        class="checkbox-icon bg-[#ddbc7a] rounded w-9 h-9 shadow cursor-pointer">
-                                                    </div>
-                                                </label>
-                                            </div>
-
-                                            <div
-                                                class="checkbox-color relative hover:shadow-lg checked:shadow-lg w-fit cursor-pointer">
-                                                <label for="">
-                                                    <input name="color" value="dolphin-gray" type="checkbox"
-                                                        class="warna absolute bg-transparent w-9 h-9 z-10 border-none cursor-pointer">
-                                                    <div
-                                                        class="checkbox-icon bg-[#989c9f] rounded w-9 h-9 shadow cursor-pointer">
-                                                    </div>
-                                                </label>
-                                            </div>
-
-                                            <div
-                                                class="checkbox-color relative hover:shadow-lg checked:shadow-lg w-fit cursor-pointer">
-                                                <label for="">
-                                                    <input name="color" value="gray" type="checkbox"
-                                                        class="warna absolute bg-transparent w-9 h-9 z-10 border-none cursor-pointer">
-                                                    <div
-                                                        class="checkbox-icon bg-[#999999] rounded w-9 h-9 shadow cursor-pointer">
-                                                    </div>
-                                                </label>
-                                            </div>
-
-                                            <div
-                                                class="checkbox-color relative hover:shadow-lg checked:shadow-lg w-fit cursor-pointer">
-                                                <label for="">
-                                                    <input name="color" value="green" type="checkbox"
-                                                        class="warna absolute bg-transparent w-9 h-9 z-10 border-none cursor-pointer">
-                                                    <div
-                                                        class="checkbox-icon bg-[#31af00] rounded w-9 h-9 shadow cursor-pointer">
-                                                    </div>
-                                                </label>
-                                            </div>
-
-                                            <div
-                                                class="checkbox-color relative hover:shadow-lg checked:shadow-lg w-fit cursor-pointer">
-                                                <label for="">
-                                                    <input name="color" value="khaki" type="checkbox"
-                                                        class="warna absolute bg-transparent w-9 h-9 z-10 border-none cursor-pointer">
-                                                    <div
-                                                        class="checkbox-icon bg-[#c3b091] rounded w-9 h-9 shadow cursor-pointer">
-                                                    </div>
-                                                </label>
-                                            </div>
-
-                                            <div
-                                                class="checkbox-color relative hover:shadow-lg checked:shadow-lg w-fit cursor-pointer">
-                                                <label for="">
-                                                    <input name="color" value="orange" type="checkbox"
-                                                        class="warna absolute bg-transparent w-9 h-9 z-10 border-none cursor-pointer">
-                                                    <div
-                                                        class="checkbox-icon bg-[#dd6e00] rounded w-9 h-9 shadow cursor-pointer">
-                                                    </div>
-                                                </label>
-                                            </div>
-
-                                            <div
-                                                class="checkbox-color relative hover:shadow-lg checked:shadow-lg w-fit cursor-pointer">
-                                                <label for="">
-                                                    <input name="color" value="pink" type="checkbox"
-                                                        class="warna absolute bg-transparent w-9 h-9 z-10 border-none cursor-pointer">
-                                                    <div
-                                                        class="checkbox-icon bg-[#fc76d6] rounded w-9 h-9 shadow cursor-pointer">
-                                                    </div>
-                                                </label>
-                                            </div>
-
-                                            <div
-                                                class="checkbox-color relative hover:shadow-lg checked:shadow-lg w-fit cursor-pointer">
-                                                <label for="">
-                                                    <input name="color" value="purple" type="checkbox"
-                                                        class="warna absolute bg-transparent w-9 h-9 z-10 border-none cursor-pointer">
-                                                    <div
-                                                        class="checkbox-icon bg-[#8224e3] rounded w-9 h-9 shadow cursor-pointer">
-                                                    </div>
-                                                </label>
-                                            </div>
-
-                                            <div
-                                                class="checkbox-color relative hover:shadow-lg checked:shadow-lg w-fit cursor-pointer">
-                                                <label for="">
-                                                    <input name="color" value="red" type="checkbox"
-                                                        class="warna absolute bg-transparent w-9 h-9 z-10 border-none cursor-pointer">
-                                                    <div
-                                                        class="checkbox-icon bg-[#c60000] rounded w-9 h-9 shadow cursor-pointer">
-                                                    </div>
-                                                </label>
-                                            </div>
-
-                                            <div
-                                                class="checkbox-color relative hover:shadow-lg checked:shadow-lg w-fit cursor-pointer">
-                                                <label for="">
-                                                    <input name="color" value="rose-pink" type="checkbox"
-                                                        class="warna absolute bg-transparent w-9 h-9 z-10 border-none cursor-pointer">
-                                                    <div
-                                                        class="checkbox-icon bg-[#f9c3be] rounded w-9 h-9 shadow cursor-pointer">
-                                                    </div>
-                                                </label>
-                                            </div>
-
-                                            <div
-                                                class="checkbox-color relative hover:shadow-lg checked:shadow-lg w-fit cursor-pointer">
-                                                <label for="">
-                                                    <input name="color" value="silver" type="checkbox"
-                                                        class="warna absolute bg-transparent w-9 h-9 z-10 border-none cursor-pointer">
-                                                    <div
-                                                        class="checkbox-icon bg-[#a0a0a0] rounded w-9 h-9 shadow cursor-pointer">
-                                                    </div>
-                                                </label>
-                                            </div>
-
-                                            <div
-                                                class="checkbox-color relative hover:shadow-lg checked:shadow-lg w-fit cursor-pointer">
-                                                <label for="">
-                                                    <input name="color" value="sky-blue" type="checkbox"
-                                                        class="warna absolute bg-transparent w-9 h-9 z-10 border-none cursor-pointer">
-                                                    <div
-                                                        class="checkbox-icon bg-[#93bbdb] rounded w-9 h-9 shadow cursor-pointer">
-                                                    </div>
-                                                </label>
-                                            </div>
-
-                                            <div
-                                                class="checkbox-color relative hover:shadow-lg checked:shadow-lg w-fit cursor-pointer">
-                                                <label for="">
-                                                    <input name="color" value="white" type="checkbox"
-                                                        class="warna absolute bg-transparent w-9 h-9 z-10 border-none cursor-pointer">
-                                                    <div
-                                                        class="checkbox-icon bg-[#ffffff] rounded w-9 h-9 shadow cursor-pointer">
-                                                    </div>
-                                                </label>
-                                            </div>
-
-                                            <div
-                                                class="checkbox-color relative hover:shadow-lg checked:shadow-lg w-fit cursor-pointer">
-                                                <label for="">
-                                                    <input name="color" value="yellow" type="checkbox"
-                                                        class="warna absolute bg-transparent w-9 h-9 z-10 border-none cursor-pointer">
-                                                    <div
-                                                        class="checkbox-icon bg-[#f9d800] rounded w-9 h-9 shadow cursor-pointer">
-                                                    </div>
-                                                </label>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                    <div class="mb-[30px]" >
-                                        <div id="usia"
-                                            class="pb-[15px] mb-5 flex justify-between items-center font-bold border-b cursor-pointer">
-                                            <span class=" text-[15px]">USIA</span>
-                                            <i id="fa-age" class="fa-solid fa-sort-up text-lg text-[#d4d4d4]"></i>
-                                        </div>
-
-                                        <div class="filter-group__content font-semibold close" id="age">
-
-                                            <div class="flex items-center mb-[18px] text-sm">
-                                                <input id="age-3-5" type="checkbox" name="age" value="3-5"
-                                                    class="ukuran w-[18px] h-[18px] rounded-[3px] cursor-pointer">
-                                                <label for="age-3-5" class="ml-2 cursor-pointer flex items-center">
-                                                    <span class="checkbox-icon mr-[5px]"></span>
-                                                    3-5
-                                                </label>
-                                            </div>
-                                            <div class="flex items-center mb-[18px] text-sm">
-                                                <input id="age-4-6" type="checkbox" name="age" value="4-6"
-                                                    class="ukuran w-[18px] h-[18px] rounded-[3px] cursor-pointer">
-                                                <label for="age-4-6" class="ml-2 cursor-pointer flex items-center">
-                                                    <span class="checkbox-icon mr-[5px]"></span>
-                                                    4-6
-                                                </label>
-                                            </div>
-                                            <div class="flex items-center mb-[18px] text-sm">
-                                                <input id="age-5-7" type="checkbox" name="age" value="5-7"
-                                                    class="ukuran w-[18px] h-[18px] rounded-[3px] cursor-pointer">
-                                                <label for="age-5-7" class="ml-2 cursor-pointer flex items-center">
-                                                    <span class="checkbox-icon mr-[5px]"></span>
-                                                    5-7
-                                                </label>
-                                            </div>
-                                            <div class="flex items-center mb-[18px] text-sm">
-                                                <input id="age-6-8" type="checkbox" name="age" value="6-8"
-                                                    class="ukuran w-[18px] h-[18px] rounded-[3px] cursor-pointer">
-                                                <label for="age-6-8" class="ml-2 cursor-pointer flex items-center">
-                                                    <span class="checkbox-icon mr-[5px]"></span>
-                                                    6-8
-                                                </label>
-                                            </div>
-                                            <div class="flex items-center mb-[18px] text-sm">
-                                                <input id="age-anak" type="checkbox" name="age" value="anak"
-                                                    class="ukuran w-[18px] h-[18px] rounded-[3px] cursor-pointer">
-                                                <label for="age-anak" class="ml-2 cursor-pointer flex items-center">
-                                                    <span class="checkbox-icon mr-[5px]"></span>
-                                                    Anak
-                                                </label>
-                                            </div>
-                                            <div class="flex items-center mb-[18px] text-sm">
-                                                <input id="age-dewasa" type="checkbox" name="age" value="dewasa"
-                                                    class="ukuran w-[18px] h-[18px] rounded-[3px] cursor-pointer">
-                                                <label for="age-dewasa" class="ml-2 cursor-pointer flex items-center">
-                                                    <span class="checkbox-icon mr-[5px]"></span>
-                                                    Dewasa
-                                                </label>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="filter-group disabled-slide" id="harga">
-                                        <div
-                                            class="pb-[15px] mb-5 flex justify-between items-center font-bold border-b">
-                                            <span class=" text-[15px]">HARGA</span>
-                                        </div>
-
-
-                                        <div class="wrapper">
-
-                                            <div class="slider">
-                                                <div class="progress"></div>
-                                            </div>
-
-                                            <div class="range-input">
-                                                <input type="range" min="0" max="38000000" value="0"
-                                                    class="min-range" />
-                                                <input type="range" min="0" max="38000000" value="38000000"
-                                                    class="max-range" />
-                                            </div>
-
-                                            <div class="price-input">
-                                                <div class="flex">
-                                                    <span class="font-montserrat text-sm mr-[5px] font-semibold">Harga:
-                                                    </span>
-                                                    <span class="font-sans font-normal text-sm tracking-wider">Rp. 0 -
-                                                        Rp. 3.800.000</span>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-
-                                    <button type="submit" id="submit-filter"
-                                        class="font-['Montserrat'] font-semibold text-[14px] bg-[#002856] py-[8px] px-[15px] bottom-[20px] rounded-[28px] text-white flex items-center border-2 border-[#002856] hover:bg-[#ffb71b] hover:border-[#ffb71b] transition-all duration-300 justify-center min-w-[160px] mx-auto">Filter</button>
-                                </form>
+                                </div>
+                                <!-- Slider controls -->
+                                <button type="button"
+                                    class="absolute top-1/2 start-0 z-30 flex items-center justify-center px-4 focus:outline-none"
+                                    data-carousel-prev>
+                                    <span
+                                        class="cursor-pointer inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#ffb71b] hover:bg-[#e8a008] focus:outline-none">
+                                        <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M5 1 1 5l4 4" />
+                                        </svg>
+                                        <span class="sr-only">Previous</span>
+                                    </span>
+                                </button>
+                                <button type="button"
+                                    class="absolute end-0 z-30 flex items-center justify-center top-1/2 px-4 focus:outline-none"
+                                    data-carousel-next>
+                                    <span
+                                        class="cursor-pointer inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#ffb71b] hover:bg-[#e8a008] focus:outline-none">
+                                        <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m1 9 4-4-4-4" />
+                                        </svg>
+                                        <span class="sr-only">Next</span>
+                                    </span>
+                                </button>
                             </div>
+
+                            <div class="product-slider__nav slick-initialized slick-slider">
+                                <div aria-live="polite" class="slick-list draggable">
+                                    <div class="slick-track flex gap-4" role="listbox">
+                                        <div class="p-load--wrapper change-price slick-slide slick-active outline-1 outline outline-[#ffb71b] cursor-pointer"
+                                            data-slick-index="0" aria-hidden="false" tabindex="-1" role="option"
+                                            aria-describedby="slick-slide10" style="width: 107px;">
+                                            <img data-color="1"
+                                                src="https://www.wimcycle.com/wp-content/uploads/2024/02/MY24-BRONCO20-BURN-GREEN-FOREST-P-200x200.jpg?x30018"
+                                                data-price="IDR 1.325.000"
+                                                alt="Sepeda Anak BMX Wimcycle Bronco Series Burn 20 Forest Green"
+                                                width="" height="">
+                                        </div>
+                                        <div class="p-load--wrapper change-price slick-slide slick-current slick-active hover:outline hover:outline-1 hover:outline-[#ffb71b]"
+                                            data-slick-index="1" aria-hidden="false" tabindex="-1" role="option"
+                                            aria-describedby="slick-slide11" style="width: 107px;">
+                                            <img data-color="2"
+                                                src="https://www.wimcycle.com/wp-content/uploads/2024/02/MY24-BRONCO20-BURN-BLACK-P-200x200.jpg?x30018"
+                                                data-price="IDR 1.325.000"
+                                                alt="Sepeda Anak BMX Wimcycle Bronco Series Burn 20 Black" width=""
+                                                height="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
                         </div>
 
-
-                        <div class="col-span-9 px-[15px] font-[Montserrat]">
-
-                            <div class="flex justify-end">
-                                <form action="https://www.wimcycle.com/produk" method="get"
-                                    class="flex items-center space-x-4">
-                                    <div class="product-sort flex items-center mb-[30px]">
-                                        <label for="product_order" class="items-center mr-[10px] font-bold">Urutkan
-                                            berdasarkan</label>
-                                        <div class="custom-select">
-                                            <select name="product_order" id="product_order"
-                                                class="border font-bold border-gray-300 rounded-sm py-[10px] pl-[22px] pr-[30px]"
-                                                onchange="this.form.submit()">
-                                                <option class="font-bold" value="" selected>Terbaru</option>
-                                                <option class="font-bold" value="desc">Harga Tertinggi</option>
-                                                <option class="font-bold" value="asc">Harga Terendah</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </form>
+                        <div class="flex px-[15px] flex-col text-left col-span-5">
+                            <h1 class="title text-[#002856] text-3xl mb-[5px] font-bold font-['Montserrat'] ">BMX Bronco
+                                BURN 20"<span id="typingText"></span>
+                            </h1>
+                            <div class="price text-[22px] text-[#ffb71b] font-tisans mb-[10px]">IDR 1.325.000</div>
+                            <div class="desc mb-[10px]">
+                                Penuhi hasrat diri untuk melalui rintangan yang berapi-api dengan BMX Bronco BURN. BMX
+                                terbaru ini terbuat dari bahan steel, dengan desain terbaru membuat kamu makin
+                                bersemangat dengan motif Api Wimcycle Bronco BURN. Di lengkapi dengan ban yang
+                                berkualitas dan tidak mudah selip berukuran <em><strong>20"x2.125"</strong></em>. Dengan
+                                warna <em><strong>Black &amp; Green Forest</strong></em> dengan finishing Glosy yang
+                                membuat kamu terlihat beda dan keren.
+                                <h5><strong>*Harga wilayah Pulau Jawa &amp; Bali</strong></h5>
+                            </div>
+                            <div class="subtitle font-semibold font-tisans mb-[10px]">Warna Tersedia</div>
+                            <div class="color-list h-[32px] w-full flex gap-4">
+                                <div
+                                    class="color bg-[#31af00] w-[32px] h-[32px] rounded-md border-2 border-[#ffb71b] cursor-pointer">
+                                </div>
+                                <div class="color bg-[#000000] w-[32px] h-[32px] rounded-md cursor-pointer"></div>
                             </div>
 
-                            <div class="prodlist  ">
+                            <div class="komponen" id="komponen">
+                                <div
+                                    class="py-2 mb-[10px] mt-5 flex justify-between items-center font-bold border-b border-t cursor-pointer">
+                                    <span class="py-[10px] text-[16px] text-[#002856]">Komponen</span>
+                                    <i id="fa-komponen" class="fa-solid fa-chevron-up text-lg text-[#8a8a8a]"></i>
+
+                                </div>
+                                <div id="comp" class="group-komponen font-tisans text-sm font-normal close">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <th class="py-[5px] text-[#333333]">Frame</th>
+                                                <td class="py-[5px] text-[#8a8a8a]">HI-TEN STEEL BMX </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="py-[5px] text-[#333333]">Fork</th>
+                                                <td class="py-[5px] text-[#8a8a8a]">HI-TEN STEEL RIGID 31.8 MM</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="py-[5px] text-[#333333]">Head set</th>
+                                                <td class="py-[5px] text-[#8a8a8a]">STEEL THREADLESS 1-1/8"</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="py-[5px] text-[#333333]">Stem</th>
+                                                <td class="py-[5px] text-[#8a8a8a]">ALLOY A-HEAD</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="py-[5px] text-[#333333]">Handle bar</th>
+                                                <td class="py-[5px] text-[#8a8a8a]">STEEL BMX 650 MM</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="py-[5px] text-[#333333]">Rear derailleur</th>
+                                                <td class="py-[5px] text-[#8a8a8a]">-</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="py-[5px] text-[#333333]">Shifter</th>
+                                                <td class="py-[5px] text-[#8a8a8a]">-</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="py-[5px] text-[#333333]">Bottom bracket</th>
+                                                <td class="py-[5px] text-[#8a8a8a]">STEEL BIG BB</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="py-[5px] text-[#333333]">Crank set</th>
+                                                <td class="py-[5px] text-[#8a8a8a]">1 PCS CRANK 165 MM</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="py-[5px] text-[#333333]">Freewheel</th>
+                                                <td class="py-[5px] text-[#8a8a8a]">STEEL 18T</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="py-[5px] text-[#333333]">Chain</th>
+                                                <td class="py-[5px] text-[#8a8a8a]">1-SP</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="py-[5px] text-[#333333]">Pedal</th>
+                                                <td class="py-[5px] text-[#8a8a8a]">PLASTIC</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="py-[5px] text-[#333333]">Brake</th>
+                                                <td class="py-[5px] text-[#8a8a8a]">ALLOY V-BRAKE</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="py-[5px] text-[#333333]">Wheel set</th>
+                                                <td class="py-[5px] text-[#8a8a8a]">ALLOY SINGLE WALL WITH CNC SIDE
+                                                    &amp; STEEL HUB 36H</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="py-[5px] text-[#333333]">Tire</th>
+                                                <td class="py-[5px] text-[#8a8a8a]">20" X 2.125"</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="py-[5px] text-[#333333]">Saddle</th>
+                                                <td class="py-[5px] text-[#8a8a8a]">WIM CYCLE SADDLE WITH CLAMP</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="py-[5px] text-[#333333]">Seat post</th>
+                                                <td class="py-[5px] text-[#8a8a8a]">STEEL, 25.4 X 250 MM</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="py-[5px] text-[#333333]">Wheel size</th>
+                                                <td class="py-[5px] text-[#8a8a8a]">20"</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="py-[5px] text-[#333333]">Color</th>
+                                                <td class="py-[5px] text-[#8a8a8a]">Black, Green</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="py-[5px] text-[#333333]">Weight</th>
+                                                <td class="py-[5px] text-[#8a8a8a]">-</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex items-center justify-between product-share py-[18px] mb-[45px] border-t border-b w-full ">
+                        <div>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.wimcycle.com/produk/sepeda-anak/bronco-burn-20/"
+                                target="_blank" rel="nofollow" class="flex items-center">
+                                <img src="https://www.wimcycle.com/wp-content/themes/wimcycle/assets/images/icon-fb.png?x30018"
+                                    alt="" width="36" height="36" class="mr-[10px]">
+                                <span class="text-[#002856] text-base font-semibold">Bagikan di Facebook</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://api.whatsapp.com/send?text=https://www.wimcycle.com/produk/sepeda-anak/bronco-burn-20/"
+                                target="_blank" rel="nofollow" class="flex items-center">
+                                <img src="https://www.wimcycle.com/wp-content/themes/wimcycle/assets/images/icon-wa.png?x30018"
+                                    alt="" width="36" height="36" class="mr-[10px]">
+                                <span class="text-[#002856] text-base font-semibold">Bagikan di WhatsApp</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="http://twitter.com/share?text=BMX Bronco BURN 20″&amp;url=https://www.wimcycle.com/produk/sepeda-anak/bronco-burn-20/"
+                                target="_blank" rel="nofollow" class="flex items-center">
+                                <img src="https://www.wimcycle.com/wp-content/themes/wimcycle/assets/images/icon-twitter.png?x30018"
+                                    alt="" width="36" height="36" class="mr-[10px]">
+                                <span class="text-[#002856] text-base font-semibold">Bagikan di Twitter</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="mailto:?&amp;subject=BMX Bronco BURN 20″&amp;body=https://www.wimcycle.com/produk/sepeda-anak/bronco-burn-20/"
+                                target="_blank" rel="nofollow" class="flex items-center">
+                                <img src="https://www.wimcycle.com/wp-content/themes/wimcycle/assets/images/icon-mail.png?x30018"
+                                    alt="" width="36" height="36" class="mr-[10px]">
+                                <span class="text-[#002856] text-base font-semibold">Bagikan via Email</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-12">
+                        <div class="col-span-12 px-[15px] font-[Montserrat]">
+
+                            <div class="flex flex-col text-center w-full mb-[40px]">
+                                <h1 class="text-[28px] font-bold title-font mb-5 text-[#002856] font-['Montserrat']">
+                                    SEPEDA
+                                    WIMCYCLE
+                                </h1>
+                                <div class="section-line"></div>
+                            </div>
+
+                            <div class="prodlist  terkait mb-14">
                                 <div class="grid row-auto grid-cols-12 gap-5">
-                                    <div class="col-span-4 border flex pb-5 hover:border hover:border-black hover:shadow-lg">
+                                    <div
+                                        class="col-span-4 border flex pb-5 hover:border hover:border-black hover:shadow-lg  mb-[30px]">
                                         <div class="box flex flex-col justify-between text-center h-full w-full ">
                                             <div>
                                                 <a href="https://www.wimcycle.com/produk/sepeda-anak/bronco-burn-16/"
@@ -677,7 +479,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-span-4 border flex pb-5 hover:border hover:border-black hover:shadow-lg">
+                                    <div
+                                        class="col-span-4 border flex pb-5 hover:border hover:border-black hover:shadow-lg mb-[30px]">
                                         <div class="box flex flex-col justify-between text-center h-full w-full ">
                                             <div>
                                                 <a href="https://www.wimcycle.com/produk/sepeda-anak/bronco-burn-16/"
@@ -740,7 +543,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-span-4 border flex pb-5 hover:border hover:border-black hover:shadow-lg">
+                                    <div
+                                        class="col-span-4 border flex pb-5 hover:border hover:border-black hover:shadow-lg mb-[30px]">
                                         <div class="box flex flex-col justify-between text-center h-full w-full ">
                                             <div>
                                                 <a href="https://www.wimcycle.com/produk/sepeda-anak/bronco-burn-16/"
@@ -806,57 +610,6 @@
                                 </div>
 
                             </div>
-
-                            <ul class="justify-center flex items-center  text-sm font-montserrat mt-[135px] mb-[110px]"
-                                id="pagination">
-                                <li class="mr-[40px] w-10 h-10">
-                                    <a href="#"
-                                        class="flex items-center justify-center px-4 h-10 text-[#002856] bg-white border  border-gray-300 hover:bg-[#002856] dark:hover:text-white transition duration-300 ease-in-out font-semibold">
-                                        <span class="sr-only">Previous</span>
-                                        <svg class="w-3 h-3 rtl:rotate-180" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                                stroke-width="2" d="M5 1 1 5l4 4" />
-                                        </svg>
-                                    </a>
-
-                                </li>
-                                <li class="w-10 h-10 mx-[10px]">
-                                    <a href="#" aria-current="page"
-                                        class="active flex items-center justify-center px-4 h-10 border  border-gray-300 bg-[#002856] text-white transition duration-300 ease-in-out font-semibold">1</a>
-                                </li>
-                                <li class="w-10 h-10 mx-[10px]">
-                                    <a href="#" aria-current="page"
-                                        class="flex items-center justify-center px-4 h-10 text-[#002856] bg-white border  border-gray-300 hover:bg-[#002856] dark:hover:text-white transition duration-300 ease-in-out font-semibold">2</a>
-                                </li>
-                                <li class="w-10 h-10 mx-[10px]">
-                                    <a href="#" aria-current="page"
-                                        class="flex items-center justify-center px-4 h-10 text-[#002856] bg-white border  border-gray-300 hover:bg-[#002856] dark:hover:text-white transition duration-300 ease-in-out font-semibold">3</a>
-                                </li>
-                                <li class="w-10 h-10 mx-[10px]">
-                                    <a href="#" aria-current="page"
-                                        class="flex items-center justify-center px-4 h-10 text-[#002856] bg-white border  border-gray-300 hover:bg-[#002856] dark:hover:text-white transition duration-300 ease-in-out font-semibold">4</a>
-                                </li>
-                                <li class="w-10 h-10 mx-[10px]">
-                                    <a href="#" aria-current="page"
-                                        class="flex items-center justify-center px-4 h-10 text-[#002856] bg-white border  border-gray-300 hover:bg-[#002856] dark:hover:text-white transition duration-300 ease-in-out font-semibold">5</a>
-                                </li>
-                                <li class="w-10 h-10 mx-[10px]">
-                                    <a href="#" aria-current="page"
-                                        class="flex items-center justify-center px-4 h-10 text-[#002856] bg-white border  border-gray-300 hover:bg-[#002856] dark:hover:text-white transition duration-300 ease-in-out font-semibold">6</a>
-                                </li>
-                                <li class="ml-[40px] w-10 h-10">
-                                    <a href="#"
-                                        class="flex items-center justify-center px-4 h-10 text-[#002856] bg-white border  border-gray-300 hover:bg-[#002856] dark:hover:text-white transition duration-300 ease-in-out font-semibold">
-                                        <span class="sr-only">Next</span>
-                                        <svg class="w-3 h-3 rtl:rotate-180" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                                stroke-width="2" d="m1 9 4-4-4-4" />
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
 
                         </div>
 
@@ -1074,45 +827,17 @@
 
     </div>
 
-
     <script>
-        // Form Filter
-        document.getElementById('tipe').addEventListener('click', function () {
-            const icon = document.getElementById('fa-type');
-            const content = document.getElementById('type');
+        // Komponen
+        document.getElementById('komponen').addEventListener('click', function () {
+            const icon = document.getElementById('fa-komponen');
+            const content = document.getElementById('comp');
 
-            icon.classList.toggle('fa-sort-up');
-            icon.classList.toggle('fa-sort-down');
-            content.classList.toggle('close');
-        });
-        document.getElementById('ukuran').addEventListener('click', function () {
-            const icon = document.getElementById('fa-size');
-            const content = document.getElementById('size');
-
-            icon.classList.toggle('fa-sort-up');
-            icon.classList.toggle('fa-sort-down');
-            content.classList.toggle('close');
-        });
-        document.getElementById('warna').addEventListener('click', function () {
-            const icon = document.getElementById('fa-color');
-            const content = document.getElementById('color');
-
-            icon.classList.toggle('fa-sort-up');
-            icon.classList.toggle('fa-sort-down');
-            content.classList.toggle('close');
-        });
-        document.getElementById('usia').addEventListener('click', function () {
-            const icon = document.getElementById('fa-age');
-            const content = document.getElementById('age');
-
-            icon.classList.toggle('fa-sort-up');
-            icon.classList.toggle('fa-sort-down');
+            icon.classList.toggle('fa-chevron-up');
+            icon.classList.toggle('fa-chevron-down');
             content.classList.toggle('close');
         });
     </script>
-
-    <script src="assets/js/main.js"></script>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 

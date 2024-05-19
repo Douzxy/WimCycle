@@ -2,7 +2,7 @@ module.exports = {
     theme: {
       extend: {
         fontFamily: {
-          'sans': ['titillium web', 'sans-serif'],
+          'tisans': ['titillium-web' , 'sans-serif'],
           'montserrat': ['Montserrat'],
         },
       },
